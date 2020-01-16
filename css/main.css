@@ -5,7 +5,7 @@ body {
     width: 1280px;
     margin: 0 auto;
 }
-
+/* --------- Section main  ------------- */
 .section {
     padding: 50px;
 }
@@ -44,3 +44,36 @@ body {
     content: url('../assets/check_icon.png');
     margin-right: 10px;
 }
+/* --------- Section "About"  ------------- */
+
+.section-about {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: 390px;
+}
+
+.about-article{
+    margin-right: 100px;
+}
+
+.about-article__title {
+    color: #445161;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.about-article__text{
+    color: #445161;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+
+}
+  
+.about__img {
+    background-color: rgb(68, 81, 97);
+    width: 430px;
+    height: 245px;
+  }
+  
