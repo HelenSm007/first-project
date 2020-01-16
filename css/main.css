@@ -22,7 +22,7 @@ body {
 /* --------- Section main  ------------- */
 
 .section_black {
-    background-color: #445162;
+    background-color: #445162; 
 }
 .main_section {
     display: flex;
@@ -207,6 +207,99 @@ body {
 .reviews__text_signature {
     color: #989898;
     margin-top: 15px;
+}
+
+/* ----- Section Contacts -------- */
+.section-contacts {
+    height: 510px;
+}
+  
+.contacts-title_white {
+    color: white;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.cotacts-form__fname, .cotacts-form__lname, .cotacts-form__message
+{
+    display: block;
+    width: 500px; 
+    font-size: 16px;
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 10px; 
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+.contacts-form__submit {
+    background-color: white;
+    color: #445162;
+    padding: 14px 50px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    /* margin: 0 auto; */
+}
+
+.contacts-social-menu {
+    width: 300px;
+    margin: 0 20px;
+    
+}
+
+.contacts-social-menu__item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contacts-social-menu__text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;  
+    margin-left: 10px;  
+}
+  
+.social_icon {
+    width: 24px;
+    height: 26px;
+  }
+  
+.contacts-social-button {
+    display: flex;
+    margin-top: 40px;
+}
+
+.social-button__item {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: white;
+    color: #445162;
+    font-size: 24px;
+    text-align: center;
+    line-height: 42px;
+    margin-right: 7px;
+}
+
+/* --- Section Footer ----- */
+.section-footer {
+    height: 25px;
+}
+
+.footer__text {
+    font-size: 12px;
+    color: #445162;
+    text-align: center;
+    line-height: 2;
 }
 
   
