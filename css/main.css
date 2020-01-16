@@ -93,7 +93,7 @@ body {
 
   }
 
-.dignity-article__title {
+.dignity__title {
    text-align: center;
 }
   
@@ -124,5 +124,44 @@ body {
     margin-right: 10px; */
 }
 
+ /* --- Section "Scrinshots" ----- */
 
+ .section_scrinshots {
+     height: 490px;
+ }
+  
+ .scrinshots__title{
+     text-align: center;
+ }
+
+ .scrinshots-article{
+     display: flex;
+ }
+
+ .scrinshots-article__row {
+    display: flex;
+    margin-bottom: 30px;
+}
+ .imagscrinshots-article__imge {
+    /* background-color: rgb(68, 81, 97); */
+    width: 200px;
+    height: 150px;
+  }
+  
+  .scrinshots-article__description{
+      margin: 0 15px;
+  }
+
+  .scrinshots-article__title {
+    font-size: 24px;
+    color: #445161;
+    margin-bottom: 16px;  
+  }
+
+  .scrinshots-article__text {
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    line-height: 1.5;
+    text-align: left;
+  }
   
