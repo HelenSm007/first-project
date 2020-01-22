@@ -1,0 +1,347 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.contacts-social-button, .contacts-social-menu__item, .contact-wrapper, .reviews-article__row, .reviews-article, .scrinshots-article__row, .scrinshots-article, .dignity-article, .section-about, .main_section {
+  display: flex;
+}
+
+body {
+  font-family: Arial;
+}
+
+.profile {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 50px;
+}
+.section_black {
+  background-color: #445162;
+}
+.section__img {
+  width: 40%;
+}
+
+.title {
+  color: #445161;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.title_center {
+  text-align: center;
+}
+
+/* --------- Section main  ------------- */
+.main_section {
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.main-articles_white {
+  color: white;
+}
+
+.main-article__title {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.main-article__list {
+  font-size: 20px;
+}
+
+.main-article__item {
+  margin-bottom: 10px;
+}
+
+.main-article__item::before {
+  content: url("../assets/check_icon.png");
+  margin-right: 10px;
+}
+
+/* --------- Section "About"  ------------- */
+.section-about {
+  flex-flow: row;
+  justify-content: space-between;
+  height: 340px;
+}
+
+.about-article {
+  margin-right: 100px;
+}
+
+/* .about-article__title {
+    color: #445161;
+    font-size: 30px;
+    margin-bottom: 30px;
+} */
+.about-article__text {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about__img {
+  background-color: #445161;
+  width: 430px;
+  height: 245px;
+}
+
+/* ----  Section "Dignity" ------ */
+.section-dignity {
+  height: 420px;
+  background-color: #f5f5f5;
+}
+
+.dignity-article__list {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.dignity-article__item {
+  margin-bottom: 35px;
+}
+
+.dignity-article__item {
+  background: url("../assets/icon_pluse.png") no-repeat 0 4px;
+  /* Параметры фона для макера списка */
+  padding-left: 30px;
+  /* Смещаем текст вправо */
+  /* background-color: #445161; */
+  /* content: url('../assets/icon_pluse.png');
+      width: 20px;
+  height: 20px;  
+  margin-right: 10px; */
+}
+
+/* --- Section "Scrinshots" ----- */
+.section-scrinshots {
+  height: 490px;
+}
+
+.scrinshots-article__row {
+  margin-bottom: 30px;
+}
+
+.scrinshots-article__imge {
+  /* background-color: rgb(68, 81, 97); */
+  width: 200px;
+  height: 150px;
+}
+
+.scrinshots-article__description {
+  margin: 0 15px;
+}
+
+.scrinshots-article__title {
+  font-size: 24px;
+  color: #445161;
+  margin-bottom: 16px;
+}
+
+.scrinshots-article__text {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* ------- Section Reviews --------*/
+.section-reviews {
+  height: 425px;
+  background-color: #f5f5f5;
+}
+
+.reviews-article {
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.reviews-article__row {
+  justify-content: space-between;
+  margin-top: 22px;
+}
+
+.reviews__description {
+  background-color: #ebebeb;
+  margin-left: 30px;
+  padding: 15px;
+  width: 470px;
+}
+
+.reviews__round-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #445161;
+}
+
+.reviews__text {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.286;
+}
+
+.reviews__text_italic {
+  font-style: italic;
+}
+
+.reviews__text_signature {
+  color: #989898;
+  margin-top: 15px;
+}
+
+/* ----- Section Contacts -------- */
+.section-contacts {
+  height: 510px;
+}
+
+.contacts-title_white {
+  color: white;
+}
+
+.contact-wrapper {
+  justify-content: center;
+}
+
+.cotacts-form__fname, .cotacts-form__lname, .cotacts-form__message {
+  display: block;
+  width: 500px;
+  font-size: 16px;
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 10px;
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+.contacts-form__submit {
+  background-color: white;
+  color: #445162;
+  padding: 14px 50px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  /* margin: 0 auto; */
+}
+
+.contacts-social-menu {
+  width: 300px;
+  margin: 0 20px;
+}
+
+.contacts-social-menu__item {
+  margin-bottom: 20px;
+}
+
+.contacts-social-menu__text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  margin-left: 10px;
+}
+
+.social_icon {
+  width: 24px;
+  height: 26px;
+}
+
+.contacts-social-button {
+  margin-top: 40px;
+}
+
+.social-button__item {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: white;
+  color: #445162;
+  font-size: 24px;
+  text-align: center;
+  line-height: 42px;
+  margin-right: 7px;
+}
+
+/* --- Section Footer ----- */
+.section-footer {
+  height: 25px;
+}
+
+.footer__text {
+  font-size: 12px;
+  color: #445162;
+  text-align: center;
+  line-height: 2;
+}
+
+/*# sourceMappingURL=app.css.map */

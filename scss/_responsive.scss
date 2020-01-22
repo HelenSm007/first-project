@@ -1,0 +1,45 @@
+@media (max-width: 1280px) {
+    .main-articles {
+        &__title {
+            font-size: 40px;
+
+        }
+
+        &__list {
+            font-size: 15px;
+        }
+    }
+    .main_section {
+        flex-flow: column;
+        align-items: center;
+
+    }
+    
+}
+
+@media (max-width: 640px) {
+    .profile {
+        width: 100%;
+    }
+
+    .section {
+        padding: 5px 10px0;
+    }
+
+    .main-articles {
+        &__title {
+            font-size: 30px;
+
+        }
+
+        &__list {
+            font-size: 10px;
+        }
+    }
+    .main_section {
+        flex-flow: column;
+        align-items: center;
+
+    }
+    
+}
