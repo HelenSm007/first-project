@@ -57,7 +57,8 @@ table {
   box-sizing: border-box;
 }
 
-.contacts-social-button, .contacts-social-menu__item, .contact-wrapper, .reviews-article__row, .reviews-article, .scrinshots-article__row, .scrinshots-article, .dignity-article, .section-about, .main_section {
+/*---- main ------*/
+.contacts-social-button, .contacts-social-menu__item, .contacts-wrapper, .reviews-article__row, .reviews-article, .scrinshots-article__row, .scrinshots-article, .dignity-article, .section-about, .main_section {
   display: flex;
 }
 
@@ -81,7 +82,7 @@ body {
 }
 
 .title {
-  color: #445161;
+  color: #445162;
   font-size: 30px;
   margin-bottom: 30px;
 }
@@ -98,21 +99,17 @@ body {
 .main-articles_white {
   color: white;
 }
-
-.main-article__title {
+.main-articles__title {
   font-size: 60px;
   margin-bottom: 50px;
 }
-
-.main-article__list {
+.main-articles__list {
   font-size: 20px;
 }
-
-.main-article__item {
+.main-articles__item {
   margin-bottom: 10px;
 }
-
-.main-article__item::before {
+.main-articles__item::before {
   content: url("../assets/check_icon.png");
   margin-right: 10px;
 }
@@ -121,18 +118,11 @@ body {
 .section-about {
   flex-flow: row;
   justify-content: space-between;
-  /* height: 340px; */
 }
 
 .about-article {
   margin-right: 100px;
 }
-
-/* .about-article__title {
-    color: #445161;
-    font-size: 30px;
-    margin-bottom: 30px;
-} */
 .about-article__text {
   color: #333333;
   font-size: 16px;
@@ -140,6 +130,11 @@ body {
   margin-bottom: 20px;
 }
 
+/* .about-article__title {
+    color: #445161;
+    font-size: 30px;
+    margin-bottom: 30px;
+} */
 .about__img {
   background-color: #445161;
   width: 430px;
@@ -148,7 +143,6 @@ body {
 
 /* ----  Section "Dignity" ------ */
 .section-dignity {
-  height: 420px;
   background-color: #f5f5f5;
 }
 
@@ -158,12 +152,8 @@ body {
   line-height: 1.5;
   text-align: left;
 }
-
 .dignity-article__item {
   margin-bottom: 35px;
-}
-
-.dignity-article__item {
   background: url("../assets/icon_pluse.png") no-repeat 0 4px;
   /* Параметры фона для макера списка */
   padding-left: 30px;
@@ -176,30 +166,22 @@ body {
 }
 
 /* --- Section "Scrinshots" ----- */
-.section-scrinshots {
-  height: 490px;
-}
-
 .scrinshots-article__row {
   margin-bottom: 30px;
 }
-
 .scrinshots-article__imge {
   /* background-color: rgb(68, 81, 97); */
   width: 200px;
   height: 150px;
 }
-
 .scrinshots-article__description {
   margin: 0 15px;
 }
-
 .scrinshots-article__title {
   font-size: 24px;
-  color: #445161;
+  color: #445162;
   margin-bottom: 16px;
 }
-
 .scrinshots-article__text {
   font-size: 16px;
   color: #333333;
@@ -209,7 +191,6 @@ body {
 
 /* ------- Section Reviews --------*/
 .section-reviews {
-  height: 425px;
   background-color: #f5f5f5;
 }
 
@@ -217,55 +198,46 @@ body {
   flex-flow: row;
   justify-content: space-between;
 }
-
 .reviews-article__row {
   justify-content: space-between;
   margin-top: 22px;
 }
-
 .reviews__description {
   background-color: #ebebeb;
   margin-left: 30px;
   padding: 15px;
   width: 470px;
 }
-
 .reviews__round-img {
   width: 75px;
   height: 75px;
   border-radius: 50%;
   background-color: #445161;
 }
-
 .reviews__text {
   font-size: 14px;
   color: #333333;
   line-height: 1.286;
 }
-
 .reviews__text_italic {
   font-style: italic;
 }
-
 .reviews__text_signature {
   color: #989898;
   margin-top: 15px;
 }
 
 /* ----- Section Contacts -------- */
-.section-contacts {
-  height: 510px;
+.contacts {
+  /* Style the submit button with a specific background color etc */
 }
-
 .contacts-title_white {
   color: white;
 }
-
-.contact-wrapper {
+.contacts-wrapper {
   justify-content: center;
 }
-
-.cotacts-form__fname, .cotacts-form__lname, .cotacts-form__message {
+.contacts-form__fname, .contacts-form__lname, .contacts-form__message {
   display: block;
   width: 500px;
   font-size: 16px;
@@ -280,8 +252,6 @@ body {
   /* Bottom margin */
   resize: vertical;
 }
-
-/* Style the submit button with a specific background color etc */
 .contacts-form__submit {
   background-color: white;
   color: #445162;
@@ -292,30 +262,26 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  /* margin: 0 auto; */
+  display: block;
+  margin: 0 auto;
 }
-
 .contacts-social-menu {
   width: 300px;
   margin: 0 20px;
 }
-
 .contacts-social-menu__item {
   margin-bottom: 20px;
 }
-
+.contacts-social-menu__item .social_icon {
+  width: 24px;
+  height: 26px;
+}
 .contacts-social-menu__text {
   font-size: 16px;
   line-height: 1.5;
   color: white;
   margin-left: 10px;
 }
-
-.social_icon {
-  width: 24px;
-  height: 26px;
-}
-
 .contacts-social-button {
   margin-top: 40px;
 }
@@ -333,10 +299,6 @@ body {
 }
 
 /* --- Section Footer ----- */
-.section-footer {
-  height: 25px;
-}
-
 .footer__text {
   font-size: 12px;
   color: #445162;
@@ -344,6 +306,7 @@ body {
   line-height: 2;
 }
 
+/*----------------*/
 @media (max-width: 1280px) {
   .main-articles__title {
     font-size: 40px;
