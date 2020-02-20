@@ -1,0 +1,307 @@
+/*---- main ------*/
+%display-flex {
+    display: flex;
+}
+
+@mixin fs-mb ($val, $val2) {
+    font-size: $val;
+    margin-bottom: $val2;
+}
+
+body {
+    font-family: Arial;
+}
+.profile {
+    width: 100px + 1100px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 50px;
+
+    &_black {
+        background-color: $blue_color;
+    }
+    &__img {
+        width: 40%;
+    }
+}
+
+.title {
+    color: $blue_color;
+   @include fs-mb(30px, 30px);
+    
+    &_center {
+        text-align: center;
+    }
+}
+
+/* --------- Section main  ------------- */
+
+.main_section {
+    @extend %display-flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.main-articles {
+    &_white {
+        color: white;
+    }
+
+    &__title{
+        @include fs-mb(60px, 50px);
+    }
+
+    &__list {
+        font-size: 20px;
+    }
+
+    &__item {
+        margin-bottom: 10px;
+
+        &::before {
+            content: url('../assets/check_icon.png');
+            margin-right: 10px;
+        }
+    }
+}
+
+/* --------- Section "About"  ------------- */
+
+.section-about {
+    @extend %display-flex;
+    flex-flow: row;
+    justify-content: space-between;
+    // height: 340px;
+}
+
+.about-article{
+    margin-right: 100px;
+
+    &__text{
+        color: $grey_color;
+        @include fs-mb(16px, 20px);
+        line-height: 1.5;
+    }
+}
+
+/* .about-article__title {
+    color: #445161;
+    font-size: 30px;
+    margin-bottom: 30px;
+} */
+  
+.about__img {
+    background-color: rgb(68, 81, 97);
+    width: 430px;
+    height: 245px;
+  }
+  
+  /* ----  Section "Dignity" ------ */
+
+.section-dignity {
+    //   height: 420px;
+      background-color: #f5f5f5;
+
+  }
+  
+.dignity-article {
+    @extend %display-flex;
+    justify-content: space-between;
+
+    &__list {
+        font-size: 24px;
+        color: rgb(51, 51, 51);
+        line-height: 1.5;
+        text-align: left;
+    }
+    &__item {
+        margin-bottom: 35px;
+        background: url('../assets/icon_pluse.png') no-repeat 0 4px; /* Параметры фона для макера списка */
+        padding-left: 30px; /* Смещаем текст вправо */
+
+        /* background-color: #445161; */
+        /* content: url('../assets/icon_pluse.png');
+            width: 20px;
+        height: 20px;  
+        margin-right: 10px; */
+    }
+}
+ /* --- Section "Scrinshots" ----- */
+
+ .scrinshots-article{
+     @extend %display-flex;
+
+     &__row {
+        @extend %display-flex;
+        margin-bottom: 30px;
+    }
+     &__imge {
+        /* background-color: rgb(68, 81, 97); */
+        width: 200px;
+        height: 150px;
+      }
+      
+      &__description{
+          margin: 0 15px;
+      }
+    
+      &__title {
+        @include fs-mb(24px, 16px);
+        color: $blue_color; 
+      }
+    
+      &__text {
+        font-size: 16px;
+        color: $grey_color;
+        line-height: 1.5;
+        text-align: left;
+      }
+ }
+   
+  /* ------- Section Reviews --------*/
+
+  .section-reviews {
+    //   height: 425px;
+      background-color: #f5f5f5;
+  }
+
+  .reviews {
+    &-article {
+        @extend %display-flex;
+        flex-flow: row;
+        justify-content: space-between;
+
+        &__row {
+            @extend %display-flex;
+            justify-content: space-between;
+            margin-top: 22px;
+        }
+    }    
+    
+    &__description {
+        background-color: #ebebeb;
+        margin-left: 30px;
+        padding: 15px;
+        width: 470px;
+    }
+        
+    &__round-img {
+        width: 75px;
+        height: 75px;    
+        border-radius: 50%;
+        background-color: rgb(68, 81, 97);
+    
+    }
+
+    &__text {
+        font-size: 14px;
+        color: $grey_color;
+        line-height: 1.286;
+        
+        &_italic {
+            font-style: italic;
+        }
+        &_signature {
+            color: #989898;
+            margin-top: 15px;
+        }
+    }
+
+  }
+
+/* ----- Section Contacts -------- */
+  
+.contacts {
+    &-title_white {
+        color: white;
+    }
+
+    &-wrapper {
+        @extend %display-flex;
+        justify-content: center;
+    }
+
+    &-form__fname, &-form__lname, &-form__message
+    {
+        display: block;
+        width: 500px; 
+        font-size: 16px;
+        padding: 12px; /* Some padding */ 
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 10px; 
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+    /* Style the submit button with a specific background color etc */
+    &-form__submit {
+        background-color: white;
+        color: $blue_color;
+        padding: 14px 50px;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto; 
+    }
+
+    &-social-menu {
+        width: 300px;
+        margin: 0 20px;
+        
+        &__item {
+            @extend %display-flex;
+            margin-bottom: 20px;
+
+            .social_icon {
+                width: 24px;
+                height: 26px;
+            }   
+
+        }
+        
+        &__text {
+            font-size: 16px;
+            line-height: 1.5;
+            color: white;  
+            margin-left: 10px;  
+        }
+
+    }
+
+    &-social-button {
+        @extend %display-flex;
+        margin-top: 40px;
+
+
+    }
+}
+
+.social-button__item {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: white;
+    color: $blue_color;
+    font-size: 24px;
+    text-align: center;
+    line-height: 42px;
+    margin-right: 7px;
+}
+
+/* --- Section Footer ----- */
+
+.footer__text {
+    font-size: 12px;
+    color: $blue_color;
+    text-align: center;
+    line-height: 2;
+}
+
+/*----------------*/

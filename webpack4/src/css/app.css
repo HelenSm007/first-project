@@ -1,0 +1,374 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*---- main ------*/
+.contacts-social-button, .contacts-social-menu__item, .contacts-wrapper, .reviews-article__row, .reviews-article, .scrinshots-article__row, .scrinshots-article, .dignity-article, .section-about, .main_section {
+  display: flex;
+}
+
+body {
+  font-family: Arial;
+}
+
+.profile {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 50px;
+}
+.section_black {
+  background-color: #445162;
+}
+.section__img {
+  width: 40%;
+}
+
+.title {
+  color: #445162;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.title_center {
+  text-align: center;
+}
+
+/* --------- Section main  ------------- */
+.main_section {
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.main-articles_white {
+  color: white;
+}
+.main-articles__title {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+.main-articles__list {
+  font-size: 20px;
+}
+.main-articles__item {
+  margin-bottom: 10px;
+}
+.main-articles__item::before {
+  content: url("../assets/check_icon.png");
+  margin-right: 10px;
+}
+
+/* --------- Section "About"  ------------- */
+.section-about {
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.about-article {
+  margin-right: 100px;
+}
+.about-article__text {
+  color: #333333;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* .about-article__title {
+    color: #445161;
+    font-size: 30px;
+    margin-bottom: 30px;
+} */
+.about__img {
+  background-color: #445161;
+  width: 430px;
+  height: 245px;
+}
+
+/* ----  Section "Dignity" ------ */
+.section-dignity {
+  background-color: #f5f5f5;
+}
+
+.dignity-article {
+  justify-content: space-between;
+}
+.dignity-article__list {
+  font-size: 24px;
+  color: #333333;
+  line-height: 1.5;
+  text-align: left;
+}
+.dignity-article__item {
+  margin-bottom: 35px;
+  background: url("../assets/icon_pluse.png") no-repeat 0 4px;
+  /* Параметры фона для макера списка */
+  padding-left: 30px;
+  /* Смещаем текст вправо */
+  /* background-color: #445161; */
+  /* content: url('../assets/icon_pluse.png');
+      width: 20px;
+  height: 20px;  
+  margin-right: 10px; */
+}
+
+/* --- Section "Scrinshots" ----- */
+.scrinshots-article__row {
+  margin-bottom: 30px;
+}
+.scrinshots-article__imge {
+  /* background-color: rgb(68, 81, 97); */
+  width: 200px;
+  height: 150px;
+}
+.scrinshots-article__description {
+  margin: 0 15px;
+}
+.scrinshots-article__title {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #445162;
+}
+.scrinshots-article__text {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* ------- Section Reviews --------*/
+.section-reviews {
+  background-color: #f5f5f5;
+}
+
+.reviews-article {
+  flex-flow: row;
+  justify-content: space-between;
+}
+.reviews-article__row {
+  justify-content: space-between;
+  margin-top: 22px;
+}
+.reviews__description {
+  background-color: #ebebeb;
+  margin-left: 30px;
+  padding: 15px;
+  width: 470px;
+}
+.reviews__round-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #445161;
+}
+.reviews__text {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.286;
+}
+.reviews__text_italic {
+  font-style: italic;
+}
+.reviews__text_signature {
+  color: #989898;
+  margin-top: 15px;
+}
+
+/* ----- Section Contacts -------- */
+.contacts {
+  /* Style the submit button with a specific background color etc */
+}
+.contacts-title_white {
+  color: white;
+}
+.contacts-wrapper {
+  justify-content: center;
+}
+.contacts-form__fname, .contacts-form__lname, .contacts-form__message {
+  display: block;
+  width: 500px;
+  font-size: 16px;
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 10px;
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+}
+.contacts-form__submit {
+  background-color: white;
+  color: #445162;
+  padding: 14px 50px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+.contacts-social-menu {
+  width: 300px;
+  margin: 0 20px;
+}
+.contacts-social-menu__item {
+  margin-bottom: 20px;
+}
+.contacts-social-menu__item .social_icon {
+  width: 24px;
+  height: 26px;
+}
+.contacts-social-menu__text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  margin-left: 10px;
+}
+.contacts-social-button {
+  margin-top: 40px;
+}
+
+.social-button__item {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: white;
+  color: #445162;
+  font-size: 24px;
+  text-align: center;
+  line-height: 42px;
+  margin-right: 7px;
+}
+
+/* --- Section Footer ----- */
+.footer__text {
+  font-size: 12px;
+  color: #445162;
+  text-align: center;
+  line-height: 2;
+}
+
+/*----------------*/
+@media (max-width: 768px) {
+  .main-articles__title {
+    font-size: 40px;
+  }
+  .main-articles__list {
+    font-size: 15px;
+  }
+
+  .main_section {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .section-about {
+    flex-flow: column;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  .section {
+    padding: 5px 10px;
+  }
+  .section__img {
+    width: 30%;
+    min-width: 40px;
+  }
+
+  .main-articles__title {
+    font-size: 30px;
+  }
+  .main-articles__list {
+    font-size: 10px;
+  }
+
+  .main_section {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .section-about {
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .scrinshots-article, .dignity-article,
+.contacts-wrapper {
+    flex-flow: column;
+  }
+
+  .reviews-article {
+    flex-flow: column;
+  }
+  .reviews-article__row {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+  .reviews__description {
+    width: 70%;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

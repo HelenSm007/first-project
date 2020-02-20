@@ -1,0 +1,81 @@
+// планшеты
+@media (max-width: 768px) {
+
+    .main-articles {
+        &__title {
+            font-size: 40px;
+
+        }
+
+        &__list {
+            font-size: 15px;
+        }
+    }
+    .main_section {
+        flex-flow: column;
+        align-items: center;
+
+    }
+    
+    .section-about {
+        flex-flow: column;
+        align-items: center;
+
+    }
+}
+//smartphone
+@media (max-width: 400px) {
+
+    .section {
+        padding: 5px 10px;
+
+        &__img {
+            width: 30%;
+            min-width: 40px;
+        }
+    }
+
+    .main-articles {
+        &__title {
+            font-size: 30px;
+
+        }
+
+        &__list {
+            font-size: 10px;
+        }
+    }
+    .main_section {
+        flex-flow: column;
+        align-items: center;
+
+    }
+    
+    .section-about {
+        flex-flow: column;
+        align-items: center;
+
+    }
+    
+    .scrinshots-article, .dignity-article,
+    .contacts-wrapper{
+        flex-flow: column;
+    }
+
+    .reviews {
+        &-article {
+            flex-flow: column;
+
+            &__row {
+           
+                justify-content: flex-start;
+                margin-top: 10px;
+            }
+        }
+
+        &__description {
+            width:70%;
+        }       
+    } 
+
+}
