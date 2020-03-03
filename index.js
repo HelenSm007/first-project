@@ -39,23 +39,8 @@ slider.addEventListener('click', function(event){
     itemImg.src = path + 'pic' + curentImg + ext;
 });        
        
-//Плавное появление контента после полной загрузки страницы
-document.addEventListener('DOMContentLoaded', function(){
-   let sections = document.querySelectorAll('.section');
-    sections.forEach(function(section){
-        setTimeout(function(){
-            section.classList.add('appear');
-
-        }, 0)
-    });
-            /*setTimeout(function(){
-                document.querySelector('.main-articles__title').classList.add('appear');
-    
-            }, 0)*/  
-});
 
 // Button up
-// Делаем непрозначную кнопку
 let anchor = document.querySelector('.go-top');
 
 anchor.addEventListener('click', function(event){
@@ -67,9 +52,24 @@ anchor.addEventListener('click', function(event){
     })
 });
 
+// Делаем непрозначную / прозрачную кнопку
 window.addEventListener('scroll', function(){
     anchor.hidden = (this.pageYOffset < document.documentElement.clientHeight)
 });
 
 
 // alert('Ok!');
+//Плавное появление контента после полной загрузки страницы
+document.addEventListener('DOMContentLoaded', function(){
+   let sections = document.querySelectorAll('.section');
+    sections.forEach(function(section){
+        setTimeout(function(){
+            section.classList.add('appear');
+
+        }, 2000)
+    });
+            /*setTimeout(function(){
+                document.querySelector('.main-articles__title').classList.add('appear');
+    
+            }, 0)*/  
+});

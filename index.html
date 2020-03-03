@@ -26,9 +26,14 @@
         }
 
         .slides {
-           
+           width: 400px;
             /* background-image: url(assets/pic1.jpg); */
         }
+
+        .section__img{
+            width: 100%;
+        }
+
         .prev, .next {
             cursor: pointer;
             position: absolute;
@@ -52,6 +57,7 @@
             background-color: rgba(0, 0, 0, 0.5);
         }
 
+        /* Button Up */
         .go-top {
         position: fixed; 
         font-family: sans-serif;
@@ -73,7 +79,8 @@
         .go-top:hover {
         background: #333;
         }
-
+ 
+        /* Плавное появление контента */
         .appear {
             /* opacity: 1; */
             visibility:visible;
